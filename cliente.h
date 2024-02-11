@@ -1,3 +1,2 @@
-
-//Redefinição do struct cliente para Cliente
+// Redefinição do struct cliente para Cliente
 typedef struct cliente Cliente;
