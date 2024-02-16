@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Constante Máxima de 10    
+#define MAX 10
 int main() {
     FILE * arq_clientes;
     Cliente * clientes;
@@ -10,6 +12,7 @@ int main() {
 
     // Abertura do arquivo 
     arq_clientes = fopen("clientes.txt", "r+");
+
     if(arq_clientes == NULL) {
         printf("Erro ao tentar abrir arquivo!\n");
         exit(1);
