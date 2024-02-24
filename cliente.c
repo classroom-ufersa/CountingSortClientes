@@ -8,7 +8,6 @@ struct cliente {
     char endereco[50];
     int cod_cliente;                            
 };
-//void coutingSort (int  *Vetor, int Tamanho_Vetor);
 
 void CoutingSort (int array[], int Tamanho_Vetor) {
     int index, ordenador[Tamanho_Vetor];
