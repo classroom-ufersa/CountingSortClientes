@@ -7,6 +7,8 @@
 int main() {
     FILE * arq_clientes;
     Cliente * clientes;
+    int arra[] = {1,4,3,5,1,7,18,15};
+    int size = sizeof(array)/sizeof(array[0]);
     int num_linhas = 1;
     char caractere;
 
@@ -20,6 +22,7 @@ int main() {
         printf("Arquivo aberto com sucesso!\n");
     }
 
+    coutingSort(array, size);
     // Contagem do número de linhas do arquivo
     while((caractere = fgetc(arq_clientes)) != EOF) {
         if(caractere == '\n') {
@@ -27,7 +30,7 @@ int main() {
         }
     }
 
-    clientes = (Cliente *) malloc(num_linhas * sizeof(Cliente));
+    clientes = (Cliente *) malloc(num_linhas * sizeof(clientes));
     if(clientes == NULL) {
         printf("Erro na alocacao de memoria!\n");
         exit(1);
