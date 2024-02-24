@@ -1,3 +1,5 @@
-// Redefinição do struct cliente para Cliente
+/* Redefinição do struct cliente para Cliente */
 typedef struct cliente Cliente;
-void coutingSort (int  array[], int Tamanho_Vetor);
+
+/* Função para ordenar vetores numéricos em ordem crescente */
+void countingSort(int * vetor, int tamanho_vetor);
