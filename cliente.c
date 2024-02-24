@@ -46,4 +46,41 @@ void CoutingSort (int array[], int Tamanho_Vetor) {
     for( index = 0; index < Tamanho_Vetor; index++){
         printf("%d",array[index]);
     }
+
+/*
+void CoutingSort (int array[], int n) {
+    int index, b[n];
+
+    // Encontra o maior elemento do Vetor
+    int max = array[0];
+    for (index=1;index<n;index++){
+        if (array[index]>max)
+        max = array[index];
+    }
+    int count [max+1];
+
+    // Inicializa o vetor Count com 0
+    for (index=0;index<=max;index++){
+        count[index]=0;
+    }
+    // Armazena o Número de Ocorrencias
+    for (index=0;index<n;index++){
+        count[array[index]]++;
+    }
+    // Atualiza o Update Contagem
+    for (index=1;index<=max;index++){
+        count[index]=count[index]+count[index-1];
+    }
+    // Encontra o contador de cada elemento e o lugar dos elementos no vetor de Output, Array B
+    for (index=n-1;index>=0;index--){
+        b[--count[array[index]]]=array[index];
+
+    }
+    // Copia os elementos sorteados do Copy the sorted elements into the original array b para o array de Sort
+    for(index=0;index<n;index++){
+        array[index]=b[index];
+    }
+}
+*/
+
 }
