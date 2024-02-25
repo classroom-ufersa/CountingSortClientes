@@ -1,10 +1,10 @@
 # Grupo 12: Ordenção de clientes com Counting Sort
-Projeto desenvolvido como parte da avaliação da segunda unidade da disciplina Estrutura de Dados II, administrada pela professora Rosana Cibely.
-O projeto se consiste na realização de um algoritimo que manipula um tipo estruturado (Clientes) e mantém os clientes ordenados por meio de Counting Sort em um arquivo.
+Projeto desenvolvido como parte da avaliação da segunda unidade da disciplina: Algoritmos e Estrutura de Dados I, administrada pela professora Rosana Cibely.
+O projeto consiste na realização de um algoritimo que manipula um tipo estruturado (Cliente) e mantém os clientes ordenados por meio de Counting Sort em um arquivo.
 ## Requisitos
 O projeto deve:
-- [x] Conter um tipo estruturados (Clientes) que possua os seguintes elementos: Nome, endereço, código do cliente.
-- [x] O progrrama deve ordenar os clientes por código com o algoritmo Couting Sort.
+- [x] Conter um tipo estruturados (Cliente) que possua os seguintes elementos: Nome, endereço, código do cliente.
+- [x] O programa deve ordenar os clientes por código com o algoritmo Couting Sort.
 - [x] Computar o tempo de execução do processo de ordenação.
 - [x] Atualizar o arquivo texto para manter os clientes ordenados por código.
 - [x] Informar a complexidade do algoritmo Counting Sort.
@@ -15,14 +15,14 @@ O projeto deve:
 * [Fontes](#fontes)
 * [Pseudocódigo](#pseudocódigo)
 # O que é o Counting Sort?
-Desenvolvido pelo cientista da computação Harold H. Sewarld em 1954, CoutingSort ou Ordenação por contagem é um algoritmo utilizado para ordenar um vetor de acordo com valores que são números inteiros positivos ou seja: é um algoritimo de Ordenar por inteiros.
+Desenvolvido pelo cientista da computação Harold H. Sewarld em 1954, CoutingSort ou Ordenação por contagem é um algoritmo utilizado para ordenar um vetor de acordo com valores que são números inteiros positivos, ou seja, é um algoritimo de ordenar por inteiros.
 
 Opera contando o número de objetos que possuem valores distintos e aplica a soma do prefixo nessas contagens para determinar as posições de cada valor na sequência de saída.
-É bastante utilizado na sub-rotina do Radix Sort, outro algoritimo de classificação  
+É bastante utilizado na sub-rotina do Radix Sort, outro algoritimo de classificação.  
 # Como funciona o Counting Sort?
 1- Encontra-se o elemento máximo do vetor dado.
 2- Inicializa-se um vetor novo considerando o elemento máximo anterior +1 com todos os elementos contidos dentro dele em 0. Esse vetor é utilizado para armazenar a conta dos elementos do vetor inicial. Esse novo vetor é o Vetor de Conta.
-3- Em seguida, o Vetor de conta armazena a oconta de cada elemento de seu respectivo index. E soma se algum elemento do vetor orgiinal se repetir.
+3- Em seguida, o vetor de conta armazena a conta de cada elemento de seu respectivo index, e soma +1 se algum elemento do vetor orginal se repetir.
 *Por exemplo, se o vetor dado na posição 1 tiver o número 10, o vetor de conta irá adicionar +1 na posição 10 dele. Se for encontrado o valor 10 novamente, então será adicionado novamente.
 4- Encontra-se o contador de cada elemento do vetor original e do vetor de conta. 
 *Caso o elemento 4 for encontrado, ele irá no index 4 do vetor de conta e irá subtrair 1, posicionando no local correspondente do vetor original.
@@ -47,12 +47,12 @@ function CountingSort(input, k)
 
     return output
 ```
-O Pseudocódigo se consiste em um:
+O Pseudocódigo se consiste em:
     - Um vetor contador com o número máximo (k) de elementos de um vetor que é analisado (input).
     - output que é um vetor de mesmo tamanho do vetor input e que será posto em retorno.
-    - Um primeiro para (for) utilizado para ver as recorrencias do número do vetor original.
-    - Um segundo para para armazenar o valor da contagem
-    - Um terciero para atualizar os valores do vetor original. 
+    - Um primeiro para (for) utilizado para ver as recorrências dos valores do vetor original.
+    - Um segundo para (for) para atualizar os valores do vetor de contagem.
+    - Um terceiro para (for) para amazenar no vetor de saída os valores ordenados do vetor original. 
 # Fontes
 * [Counting Sort - Brilliant](https://brilliant.org/wiki/counting-sort/#counting-sort)
 * [Counting Sort - Wikipedia](https://en.wikipedia.org/wiki/Counting_sort)

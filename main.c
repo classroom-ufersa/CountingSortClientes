@@ -57,6 +57,9 @@ int main() {
         codigos_clientes[contador] = clientes[contador].cod_cliente;
     }
 
+    // Algoritmo de ordenação
+    countingSort(codigos_clientes, num_linhas);
+
     // Fechamento e reabertura do arquivo .txt
     if(fclose(arq_clientes) != 0) {
         printf("Erro ao fechar o arquivo!\n");
@@ -67,9 +70,6 @@ int main() {
         printf("Erro ao tentar abrir arquivo!\n");
         exit(1);
     }
-
-    // Algoritmo de ordenação
-    countingSort(codigos_clientes, num_linhas);
 
     // Atualizar o arquivo .txt com os dados ordenados
     for(contador = 0; contador < num_linhas; contador++) {
@@ -87,7 +87,7 @@ int main() {
         }
     }
 
-    printf("Ordenação finalizada!\n");
+    printf("Ordenacao finalizada!\n");
     
     // Fechamento do arquivo 
     if(fclose(arq_clientes) == 0) {
