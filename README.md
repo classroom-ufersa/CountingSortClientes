@@ -23,9 +23,9 @@ Opera contando o número de objetos que possuem valores distintos e aplica a som
 1- Encontra-se o elemento máximo do vetor dado.
 2- Inicializa-se um vetor novo considerando o elemento máximo anterior +1 com todos os elementos contidos dentro dele em 0. Esse vetor é utilizado para armazenar a conta dos elementos do vetor inicial. Esse novo vetor é o Vetor de Conta.
 3- Em seguida, o Vetor de conta armazena a oconta de cada elemento de seu respectivo index. E soma se algum elemento do vetor orgiinal se repetir.
-- Por exemplo, se o vetor dado na posição 1 tiver o número 10, o vetor de conta irá adicionar +1 na posição 10 dele. Se for encontrado o valor 10 novamente, então será adicionado novamente.
+*Por exemplo, se o vetor dado na posição 1 tiver o número 10, o vetor de conta irá adicionar +1 na posição 10 dele. Se for encontrado o valor 10 novamente, então será adicionado novamente.
 4- Encontra-se o contador de cada elemento do vetor original e do vetor de conta. 
-- Caso o elemento 4 for encontrado, ele irá no index 4 do vetor de conta e irá subtrair 1, posicionando no local correspondente do vetor original.
+*Caso o elemento 4 for encontrado, ele irá no index 4 do vetor de conta e irá subtrair 1, posicionando no local correspondente do vetor original.
 # Pseudocódigo
 ```
 function CountingSort(input, k)
