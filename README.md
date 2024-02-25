@@ -1,10 +1,10 @@
-# Grupo 12: Ordenção de clientes com Counting Sort
+# Grupo 12: Ordenação de clientes com Counting Sort
 Projeto desenvolvido como parte da avaliação da segunda unidade da disciplina: Algoritmos e Estrutura de Dados I, administrada pela professora Rosana Cibely.
-O projeto consiste na realização de um algoritimo que manipula um tipo estruturado (Cliente) e mantém os clientes ordenados por meio de Counting Sort em um arquivo.
+O projeto consiste na realização de um algoritmo que manipula um tipo estruturado (Cliente) e mantém os clientes ordenados por meio de Counting Sort em um arquivo.
 ## Requisitos
 O projeto deve:
 - [x] Conter um tipo estruturados (Cliente) que possua os seguintes elementos: Nome, endereço, código do cliente.
-- [x] O programa deve ordenar os clientes por código com o algoritmo Couting Sort.
+- [x] O programa deve ordenar os clientes por código com o algoritmo Counting Sort.
 - [x] Computar o tempo de execução do processo de ordenação.
 - [x] Atualizar o arquivo texto para manter os clientes ordenados por código.
 - [x] Informar a complexidade do algoritmo Counting Sort.
@@ -19,10 +19,10 @@ O projeto deve:
 * [Vantagens e Desvantagens do CountingSort](#vantagens-e-desvatanges-de-counting-sort)
 * [Fontes](#fontes)
 # O que é o Counting Sort?
-Desenvolvido pelo cientista da computação Harold H. Sewarld em 1954, CoutingSort ou Ordenação por contagem é um algoritmo utilizado para ordenar um vetor de acordo com valores que são números inteiros positivos, ou seja, é um algoritimo de ordenar por inteiros.
+Desenvolvido pelo cientista da computação Harold H. Sewarld em 1954, CountingSort ou Ordenação por contagem é um algoritmo utilizado para ordenar um vetor de acordo com valores que são números inteiros positivos, ou seja, é um algoritmo de ordenar por inteiros.
 
 Opera contando o número de objetos que possuem valores distintos e aplica a soma do prefixo nessas contagens para determinar as posições de cada valor na sequência de saída.
-É bastante utilizado na sub-rotina do Radix Sort, outro algoritimo de classificação.  
+É bastante utilizado na sub-rotina do Radix Sort, outro algoritmo de classificação.  
 # Como funciona o Counting Sort?
 1. Encontra-se o elemento máximo do vetor dado.
 2. Inicializa-se um vetor novo considerando o elemento máximo anterior +1 com todos os elementos contidos dentro dele em 0. Esse vetor é utilizado para armazenar a conta dos elementos do vetor inicial. Esse novo vetor é o Vetor de Conta.
@@ -101,21 +101,21 @@ void countingSort(int * vetor, int tamanho_vetor) {
 }
 ```
 # Complexidade de Tempo
-Complexidade de tempo é a quantidade de tempo que o algoritimo leva para executar uma tarefa com uma entrada de tamanho N. Diferente de outros códigos de ordenação, o código do Couting Sort sempre se mantem em O(n+k) para todos os cenários pois depende de O(k) para o seu funcionamento. No melhor dos casos todos os itens tem o mesmo tamanho e K é igual a 1 (Tamanho mínimo), no pior dos casos o código cria o mais longo elemento de K possível.
+Complexidade de tempo é a quantidade de tempo que o algoritmo leva para executar uma tarefa com uma entrada de tamanho N. Diferente de outros códigos de ordenação, o código do Counting Sort sempre se mantém em O(n+k) para todos os cenários, pois depende de O(k) para o seu funcionamento. No melhor dos casos todos os itens tem o mesmo tamanho e K é igual a 1 (Tamanho mínimo), no pior dos casos o código cria o mais longo elemento de K possível.
 * Melhor Caso   = O(N+K)
 * Médio Caso    = O(N+K)
 * Pior Caso     = O(N+K)
 # Complexidade de Espaço
-A Complexidade de espaço de um algoritimo é dita por S(n), onde n é o tamanhno da entrada. 
-Considerando o código, a complexidade de espaço sempre irá depender da constante K (Número máximo de elementos), sendo assim a complexidade de tempo do algoritimo É O(k). Quanto maior o elemento, maior será o array de contagem e mais espaço ocupará.
-# Vantagens e Desvatanges de Counting Sort
+A Complexidade de espaço de um algoritmo é dita por S(n), onde n é o tamanho da entrada. 
+Considerando o código, a complexidade de espaço sempre irá depender da constante K (Número máximo de elementos), sendo assim a complexidade de tempo do algoritmo É O(k). Quanto maior o elemento, maior será o array de contagem e mais espaço ocupará.
+# Vantagens e Desvantagens de Counting Sort
 ### Vantagens
-- [x] Perfomar mais rapidamente me comaparação a outros algoritmos de ordenação, como merge sort e quicksort se o tamanho da entrada for a ordem do tamanho de entrada.
+- [x] Perfomar mais rapidamente em comparação a outros algoritmos de ordenação, como merge sort e quicksort se o tamanho da entrada for a ordem do tamanho de entrada.
 - [x] Algoritmo Estável.
 ### Desvantagens
 - [x] Não funciona com valores decimais.
 - [x] Não é eficiente em longos valores para se ordenar.
-- [x] Não é um algoritimo "in-lace"(Que não requer nenhuma estrutura da data adicional). Utiliza espaço extra para classificar elementos de uma matriz.
+- [x] Não é um algoritmo "in-lace"(Que não requer nenhuma estrutura da data adicional). Utiliza espaço extra para classificar elementos de uma matriz.
 # Fontes
 * [Counting Sort - Brilliant](https://brilliant.org/wiki/counting-sort/#counting-sort)
 * [Counting Sort - Wikipedia](https://en.wikipedia.org/wiki/Counting_sort)
@@ -123,7 +123,7 @@ Considerando o código, a complexidade de espaço sempre irá depender da consta
 * [Counting Sort – Data Structures and Algorithms Tutorials](https://www.geeksforgeeks.org/counting-sort/)
 * [Counting Sort Algorithm: Overview, Time Complexity & More](https://www.simplilearn.com/tutorials/data-structure-tutorial/counting-sort-algorithm#:~:text=Counting%20sort%20is%20an%20integer,prefix%20sum%20to%20those%20counts.)
 ## Desenvolvedores 
-* [Fabio Queiroz Vieira](https://github.com/fabioqv)
+* [Fábio Queiroz Vieira](https://github.com/fabioqv)
 * [Giovanni Willian Ferreira da Silva](https://github.com/GiovanniWillian)
 * [Leonardo Augusto Silva de Sousa](https://github.com/LeonardAugusto)
 * [Levitico Ramon Perez Andrade Alvez](https://github.com/LEVEL303)
