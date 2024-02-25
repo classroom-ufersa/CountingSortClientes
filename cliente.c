@@ -21,7 +21,7 @@ void countingSort(int * vetor, int tamanho_vetor) {
     }   
 
     // Alocação do vetor de contagem
-    int * vetor_contagem = (int *) calloc(maior_elemento + 1, sizeof(int)); // c6
+    int * vetor_contagem = (int *) calloc(maior_elemento + 1, sizeof(int)); // (k+1) c6
     if(vetor_contagem == NULL) { // c7
         printf("Falha na alocacao de memoria do vetor: vetor_contagem!\n");
         exit(1);
@@ -50,7 +50,16 @@ void countingSort(int * vetor, int tamanho_vetor) {
     free(vetor_contagem); // c16
 }
 
-//  t(n)= (c1+c2+c6+c7+c16) + (n-1)(c3+c4+c5+c10+c11) + (n)(c8+c9+c12+c13+c14+c15)
-//  t(n)= a + (n-1)*b + (n)*c
-//  t(n)= (n-1) + (n)
-//  t(n)= O(n)
+/* 
+t(n)= (c1+c2+c7+c16) + (n-1)(c3+c4+c5+c10+c11) + (n)(c8+c9+c12+c13+c14+c15)
+t(n)= a + (n-1)*b + (n)*c
+t(n)= (n-1) + (n)
+t(n)= O(n)
+
+t(n)= (k+1)
+t(n)= (k)
+t(n)= (k)
+
+t(n)= O(n+k)
+
+*/ 
