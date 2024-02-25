@@ -1,5 +1,5 @@
 # Grupo 12: Ordenação de clientes com Counting Sort
-    Projeto desenvolvido como parte da avaliação da segunda unidade da disciplina: Algoritmos e Estrutura de Dados I, administrada pela professora Rosana Cibely.
+Projeto desenvolvido como parte da avaliação da segunda unidade da disciplina: Algoritmos e Estrutura de Dados I, administrada pela professora Rosana Cibely.
 O projeto consiste na realização de um algoritmo que manipula um tipo estruturado (Cliente) e mantém os clientes ordenados por meio de Counting Sort em um arquivo.
 ## Requisitos
 O projeto deve:
@@ -19,9 +19,9 @@ O projeto deve:
 * [Vantagens e Desvantagens do CountingSort](#vantagens-e-desvatanges-de-counting-sort)
 * [Fontes](#fontes)
 # O que é o Counting Sort?
-    Desenvolvido pelo cientista da computação Harold H. Sewarld em 1954, CountingSort ou Ordenação por contagem é um algoritmo utilizado para ordenar um vetor de acordo com valores que são números inteiros positivos, ou seja, é um algoritmo de ordenar por inteiros.
+Desenvolvido pelo cientista da computação Harold H. Sewarld em 1954, CountingSort ou Ordenação por contagem é um algoritmo utilizado para ordenar um vetor de acordo com valores que são números inteiros positivos, ou seja, é um algoritmo de ordenar por inteiros.
 
-    Opera contando o número de objetos que possuem valores distintos e aplica a soma do prefixo nessas contagens para determinar as posições de cada valor na sequência de saída.
+Opera contando o número de objetos que possuem valores distintos e aplica a soma do prefixo nessas contagens para determinar as posições de cada valor na sequência de saída.
 É bastante utilizado na sub-rotina do Radix Sort, outro algoritmo de classificação.  
 # Como funciona o Counting Sort?
 1. Encontra-se o elemento máximo do vetor dado.
@@ -101,12 +101,12 @@ void countingSort(int * vetor, int tamanho_vetor) {
 }
 ```
 # Complexidade de Tempo
-    Complexidade de tempo é a quantidade de tempo que o algoritmo leva para executar uma tarefa com uma entrada de tamanho N. Diferente de outros códigos de ordenação, o código do Counting Sort sempre se mantém em O(n+k) para todos os cenários, pois depende de O(k) para o seu funcionamento. No melhor dos casos todos os itens tem o mesmo tamanho e K é igual a 1 (Tamanho mínimo), no pior dos casos o código cria o mais longo elemento de K possível.
+Complexidade de tempo é a quantidade de tempo que o algoritmo leva para executar uma tarefa com uma entrada de tamanho N. Diferente de outros códigos de ordenação, o código do Counting Sort sempre se mantém em O(n+k) para todos os cenários, pois depende de O(k) para o seu funcionamento. No melhor dos casos todos os itens tem o mesmo tamanho e K é igual a 1 (Tamanho mínimo), no pior dos casos o código cria o mais longo elemento de K possível.
 * Melhor Caso   = O(N+K)
 * Médio Caso    = O(N+K)
 * Pior Caso     = O(N+K)
 # Complexidade de Espaço
-    A Complexidade de espaço de um algoritmo é dita por S(n), onde n é o tamanho da entrada. 
+A Complexidade de espaço de um algoritmo é dita por S(n), onde n é o tamanho da entrada. 
 Considerando o código, a complexidade de espaço sempre irá depender da constante K (Número máximo de elementos), sendo assim a complexidade de tempo do algoritmo É O(k). Quanto maior o elemento, maior será o array de contagem e mais espaço ocupará.
 # Vantagens e Desvantagens de Counting Sort
 ### Vantagens
