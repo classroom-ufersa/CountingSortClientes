@@ -1,6 +1,4 @@
 #include "cliente.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 // Criação da struct cliente
 struct cliente {                                

@@ -1,3 +1,8 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h> //Tempo de execução
+
+
 /* Redefinição do struct cliente para Cliente */
 typedef struct cliente Cliente;
 
